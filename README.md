@@ -1,17 +1,17 @@
 # Full-Stack-JS-CopyWrite-Code-Challenge
 Prueba Técnica de código para puesto Full Stack JS en Copywrite 
 
-// Demo Deployeado -> 
+## // Demo Deployeado -> 
 
-// Demo Local ( Descargar el repositorio )
+## // Demo Local ( Descargar el repositorio )
 
---> Back End <--
+## --> Back End <--
 - Abrir la carpeta api
 - Abrir un Terminal
 - Para instalar las dependencias ejecutar <code>npm install</code>
 - Para iniciar el Servidor ejecutar <code>npm start</code>
 
---> Front End <--
+## --> Front End <--
 - Abrir la carpeta client
 - Abrir un Terminal
 - Para instalar las dependencias ejecutar <code>npm install</code>
@@ -19,27 +19,27 @@ Prueba Técnica de código para puesto Full Stack JS en Copywrite
 
 Una vez hecho ambos pasos tanto para Back-End como para Front-End en la pestaña abierta por el terminal del Front-End se vera el Proyecto en ejecución.
 
-// Breve descripción: 
+## // Breve descripción: 
  Code Challenge
  El JavaScript challenge para Full Stack esta dividido en 3 partes:
 * Un API usando Node + Express o NestJS
 * Un Frontend cliente usando Bootstrap/Material UI + React
 * Puntos opcionales para el challenge
 
-// Opcional
+## // Opcional
 * Usar Docker o Docker Compose para correr las apps.
 
-// API
+## // API
 * Un API REST, a la cual se le envía un texto y responde con el mismo texto invertido.
 
-// libs & frameworks:
+## // libs & frameworks:
 * NodeJs
 * ExpressJs
 * Mocha
 * Chai
 * SuperTest
 
-// specs
+## // specs
 Usando NodeJs +ExpressJs se debe crear API de un solo endpoint al cual se le envía el texto de la siguiente forma:
 
     GET /iecho?text=test
@@ -71,24 +71,24 @@ Ejemplo usando curl:
     {"text":"tset"}
 También se deben crear los tests que validan el API usando Mocha + Chai + Supertest. Los tests deben poder correrse usando "npm test".
 
-// Opcional
+## // Opcional
 En la respuesta, indicar por medio del flag "palindrome": true si el texto enviado es un palindromo.
 Usar StandarJs
 
-// FRONT
+## // FRONT
 Un App cliente en React que permita enviar textos a la API del punto anterior y muestre las respuestas del API desde la ultima a la primera.
 
-// libs & frameworks:
+## // libs & frameworks:
 * NodeJs
 * Webpack
 * Bootstrap
 * React
 
-// specs
+## // specs
 Usando React + Bootstrap/Material UI se debe crear una pantalla similar a la que se muestra en el siguiente wireframe:
 
 <img src="https://github.com/PMolina00/Code_Challenge/blob/main/assets/img_n1.png?raw=true" alt="image front">
 
-// Opcional
+## // Opcional
 Usar Redux.
 Test unitarios usando Jest.
