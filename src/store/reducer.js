@@ -7,7 +7,7 @@ function rootReducer(state = initialState, action) {
     case "sendText":
       return {
         ...state,
-        data: state.echoes.concat(action.payload),
+        data: state.data.concat(action.payload),
       };
     default:
       return state;
