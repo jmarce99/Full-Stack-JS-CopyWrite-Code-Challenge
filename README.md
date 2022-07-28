@@ -88,9 +88,13 @@ También se deben crear los tests que validan el API usando Mocha + Chai + Super
 
 ## FRONT - specs
 - Usando React + Bootstrap/Material UI se debe crear una pantalla similar a la que se muestra en el siguiente wireframe:
-
-<img src="https://github.com/PMolina00/Code_Challenge/blob/main/assets/img_n1.png?raw=true" alt="image front">
+<img src="https://i.ibb.co/NxCTJWp/3.png" alt="image front">
 
 ## FRONT - Opcional
 - Usar Redux.
 - Test unitarios usando Jest.
+
+## CHALLENGE TERMINADO :
+<img src="https://i.ibb.co/yF8v6z8/1.png" alt="image front Final">
+- Responsive
+<img src="https://i.ibb.co/Bgz0f6v/2.png" alt="image front Final Responsive">
