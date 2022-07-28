@@ -3,26 +3,25 @@ Prueba Técnica de código para puesto Full Stack JS en Copywrite
 
 // Demo Deployeado -> 
 
-// Demo Local ->
-- Descargar el repositorio
+// Demo Local ( Descargar el repositorio )
 
 --> Back End <--
-- Abrir carpeta api
+- Abrir la carpeta api
 - Abrir un Terminal
-- Para instalar las dependencias ejecutar npm install
-- Para iniciar el servidor ejectura npm start
+- Para instalar las dependencias ejecutar <code>npm install</code>
+- Para iniciar el Servidor ejecutar <code>npm start</code>
 
 --> Front End <--
-- Abrir carpeta client
+- Abrir la carpeta client
 - Abrir un Terminal
-- Para instalar las dependencias ejecutar npm install
-- Para iniciar el servidor ejectura npm start
+- Para instalar las dependencias ejecutar <code>npm install</code>
+- Para iniciar el Cliente ejecutar <code>npm start</code>
 
 Una vez hecho ambos pasos tanto para Back-End como para Front-End en la pestaña abierta por el terminal del Front-End se vera el Proyecto en ejecución.
 
 // Breve descripción: 
-// Code Challenge
--> El JavaScript challenge para Full Stack esta dividido en 3 partes:
+ Code Challenge
+ El JavaScript challenge para Full Stack esta dividido en 3 partes:
 * Un API usando Node + Express o NestJS
 * Un Frontend cliente usando Bootstrap/Material UI + React
 * Puntos opcionales para el challenge
