@@ -8,7 +8,8 @@ import store from "./store";
 import App from "./App";
 import "./index.css";
 
-axios.defaults.baseURL = "http://localhost:3001";
+axios.defaults.baseURL =
+  "https://api-challenge-copywrite.herokuapp.com" || "http://localhost:3001";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Provider store={store}>
