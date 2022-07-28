@@ -22,22 +22,22 @@ Una vez hecho ambos pasos tanto para Back-End como para Front-End en la pestaña
 ## Breve descripción: 
  Code Challenge
  El JavaScript challenge para Full Stack esta dividido en 3 partes:
-* Un API usando Node + Express o NestJS
-* Un Frontend cliente usando Bootstrap/Material UI + React
-* Puntos opcionales para el challenge
+- Un API usando Node + Express o NestJS
+- Un Frontend cliente usando Bootstrap/Material UI + React
+- Puntos opcionales para el challenge
 
 ## Opcional
-* Usar Docker o Docker Compose para correr las apps.
+- Usar Docker o Docker Compose para correr las apps.
 
 ## API
-* Un API REST, a la cual se le envía un texto y responde con el mismo texto invertido.
+- Un API REST, a la cual se le envía un texto y responde con el mismo texto invertido.
 
 ## API - libs & frameworks:
-* NodeJs
-* ExpressJs
-* Mocha
-* Chai
-* SuperTest
+- NodeJs
+- ExpressJs
+- Mocha
+- Chai
+- SuperTest
 
 ## API - specs
 Usando NodeJs +ExpressJs se debe crear API de un solo endpoint al cual se le envía el texto de la siguiente forma:
@@ -72,23 +72,23 @@ Ejemplo usando curl:
 También se deben crear los tests que validan el API usando Mocha + Chai + Supertest. Los tests deben poder correrse usando "npm test".
 
 ## API - Opcional
-* En la respuesta, indicar por medio del flag "palindrome": true si el texto enviado es un palindromo.
-* Usar StandarJs
+- En la respuesta, indicar por medio del flag "palindrome": true si el texto enviado es un palindromo.
+- Usar StandarJs
 
 ## FRONT
-*Un App cliente en React que permita enviar textos a la API del punto anterior y muestre las respuestas del API desde la ultima a la primera.
+- Un App cliente en React que permita enviar textos a la API del punto anterior y muestre las respuestas del API desde la ultima a la primera.
 
 ## FRONT - libs & frameworks:
-* NodeJs
-* Webpack
-* Bootstrap
-* React
+- NodeJs
+- Webpack
+- Bootstrap
+- React
 
 ## FRONT - specs
-* Usando React + Bootstrap/Material UI se debe crear una pantalla similar a la que se muestra en el siguiente wireframe:
+- Usando React + Bootstrap/Material UI se debe crear una pantalla similar a la que se muestra en el siguiente wireframe:
 
 <img src="https://github.com/PMolina00/Code_Challenge/blob/main/assets/img_n1.png?raw=true" alt="image front">
 
 ## FRONT - Opcional
-* Usar Redux.
-* Test unitarios usando Jest.
+- Usar Redux.
+- Test unitarios usando Jest.
