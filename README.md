@@ -2,6 +2,8 @@
 Prueba Técnica de código para puesto Full Stack JS en Copywrite 
 
 ## Demo Deployeado -> 
+* Client --> https://client-challenge-copywrite.herokuapp.com/
+* Api --> https://api-challenge-copywrite.herokuapp.com/iecho?text=
 
 ## Demo Local ( Descargar el repositorio )
 
@@ -10,9 +12,9 @@ Prueba Técnica de código para puesto Full Stack JS en Copywrite
 - Abrir un Terminal
 - Para instalar las dependencias ejecutar <code>npm install</code>
 - Para iniciar el Servidor ejecutar <code>npm start</code>
+- Para correr los test ejecutar <code>npm test</code>
 
 ## Front End
-- Abrir la carpeta client
 - Abrir un Terminal
 - Para instalar las dependencias ejecutar <code>npm install</code>
 - Para iniciar el Cliente ejecutar <code>npm start</code>
