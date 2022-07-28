@@ -19,10 +19,9 @@ function reverseText(text) {
 // Route to Reverse a text and Show a Palindrome
 router.get("/", async (req, res) => {
   const { text } = req.query;
-  try {
-    if (text.length > 0) res.status(200).json(reverseText(text.toLowerCase()));
-  } catch {
-    res.status(400).json({ error: "no text" });
+  if (!text) res.status(400).json({ error: "no text" });
+  else {
+    res.status(200).json(reverseText(text.toLowerCase()));
   }
 });
 
