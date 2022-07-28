@@ -35,61 +35,72 @@ function App() {
   }, [dispatch, text]);
 
   return (
-    <div>
-      <Box alignItems="center">
-        <AppBar position="static" width="100%" top="0" color="error">
-          <Toolbar
-            sx={{
-              margin: "0 auto",
-              width: "80%",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              padding: "0",
-            }}
-          >
-            <TextField
-              placeholder="Insert text..."
-              sx={{
-                width: "80%",
-                height: "30%",
-                margin: "0 auto",
-                backgroundColor: "white",
-                borderRadius: 2,
-                padding: "0",
-              }}
-              onChange={(e) => handleInput(e)}
-            />
-
-            <Box sx={{ display: { xs: "none", md: "flex" } }}>
-              <Button
-                variant="contained"
-                color="primary"
-                onClick={(e) => handleSubmit(e)}
-                endIcon={<SendIcon />}
-              >
-                Send
-              </Button>
-            </Box>
-          </Toolbar>
-        </AppBar>
-        <CssBaseline />
-        <Container
-          maxWidth="fixed"
+    <Box
+      alignItems="center"
+      sx={{
+        width: "100vw",
+        height: "100vh",
+      }}
+    >
+      <AppBar position="static" width="100%" top="0" color="error">
+        <Toolbar
           sx={{
-            bgcolor: "white",
-            height: "65vh",
-            width: "70%",
-            margin: "auto",
-            marginTop: "2rem",
-            paddingTop: "2rem",
+            width: { xs: "100%", md: "80%" },
+            display: "flex",
+            alignItems: "center",
+            padding: "0",
+            flexDirection: { xs: "column", md: "row" },
+            justifyContent: "center",
+            margin: { xs: "1rem auto", md: "0.2rem auto" },
           }}
         >
-          Results:
-          <Box sx={{ width: "60%", margin: "auto" }}>
-            <Stack spacing={2}>
-              {state.data &&
-                state.data.map((echo, index) => (
+          <TextField
+            placeholder="Insert text..."
+            sx={{
+              width: "80%",
+              height: "30%",
+              margin: "0 auto",
+              backgroundColor: "white",
+              borderRadius: 2,
+              padding: "0",
+              marginBottom: { xs: "1rem", md: "0" },
+            }}
+            onChange={(e) => handleInput(e)}
+          />
+
+          <Button
+            variant="contained"
+            color="primary"
+            sx={{
+              width: { xs: "80%", md: "10%" },
+            }}
+            onClick={(e) => handleSubmit(e)}
+            endIcon={<SendIcon />}
+          >
+            Send
+          </Button>
+        </Toolbar>
+      </AppBar>
+      <CssBaseline />
+      <Container
+        maxWidth="fixed"
+        sx={{
+          bgcolor: "white",
+          height: "65vh",
+          width: "70%",
+          margin: "auto",
+          marginTop: "2rem",
+          paddingTop: "2rem",
+        }}
+      >
+        Results:
+        <Box sx={{ width: "60%", margin: "auto" }}>
+          <Stack spacing={2}>
+            {state.data &&
+              state.data
+                .slice(0)
+                .reverse()
+                .map((echo, index) => (
                   <Paper
                     key={index}
                     sx={{
@@ -99,16 +110,16 @@ function App() {
                     }}
                   >
                     {echo.text}
+                    {echo.error}
                     {echo.palindrome === true ? (
                       <p style={{ color: "green" }}>This is a palindrome</p>
                     ) : null}
                   </Paper>
                 ))}
-            </Stack>
-          </Box>
-        </Container>
-      </Box>
-    </div>
+          </Stack>
+        </Box>
+      </Container>
+    </Box>
   );
 }
 
