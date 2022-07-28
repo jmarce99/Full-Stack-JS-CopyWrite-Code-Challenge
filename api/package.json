@@ -1,0 +1,25 @@
+{
+  "name": "api-fullstack-js-copywrite-code-challenge",
+  "version": "1.0.0",
+  "description": "Servidor para el Challenge Full Stack JS para CopyWrite",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmarce99/Full-Stack-JS-CopyWrite-Code-Challenge.git"
+  },
+  "author": "Julio Fernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmarce99/Full-Stack-JS-CopyWrite-Code-Challenge/issues"
+  },
+  "homepage": "https://github.com/jmarce99/Full-Stack-JS-CopyWrite-Code-Challenge#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "node": "^12.0.0",
+    "nodemon": "^2.0.19",
+    "npm": "^8.15.1"
+  }
+}
